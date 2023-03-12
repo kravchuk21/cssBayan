@@ -7,40 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML + CSS accordion</title>
   <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 </head>
 
 <body>
   <div class="container">
-    <h1>cssBayan</h1>
+    <h1>CSS Bayan</h1>
 
     <form>
       <ul class="accordion">
-        <li class="accordion__item">
-          <input name="accordion__item" checked type="radio" id="accordion__item1" />
+        <li tabindex="1" class="accordion__item">
           <label for="accordion__item1">
-            <h2 class="accordion__title">lol funny mem</h2>
+            <input name="accordion__item" checked type="radio" id="accordion__item1" />
+            <h2 class="accordion__title">
+              lol funny mem
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </h2>
+            <div class="accordion__content">
+              <img src="images/lol-funny-memes.gif" />
+            </div>
           </label>
-          <div class="accordion__content">
-            <img src="images/lol-funny-memes.gif" />
-          </div>
         </li>
-        <li class="accordion__item">
-          <input name="accordion__item" type="radio" id="accordion__item2" />
+        <li tabindex="1" class="accordion__item">
           <label for="accordion__item2">
-            <h2 class="accordion__title">nok nok penguin nook nook</h2>
+            <input name="accordion__item" type="radio" id="accordion__item2" />
+            <h2 class="accordion__title">
+              nok nok penguin nook nook
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </h2>
+            <div class="accordion__content">
+              <img src="images/nok-nok-penguin-nook-nook.gif" />
+            </div>
           </label>
-          <div class="accordion__content">
-            <img src="images/nok-nok-penguin-nook-nook.gif" />
-          </div>
         </li>
-        <li class="accordion__item">
-          <input name="accordion__item" type="radio" id="accordion__item3" />
+        <li tabindex="1" class="accordion__item">
           <label for="accordion__item3">
-            <h2 class="accordion__title">gamer simpson</h2>
+            <input name="accordion__item" type="radio" id="accordion__item3" />
+            <h2 class="accordion__title">
+              gamer simpson <i class="fa fa-plus"></i>
+            </h2>
+            <div class="accordion__content">
+              <img src="images/gamer-simpson.gif" />
+            </div>
           </label>
-          <div class="accordion__content">
-            <img src="images/gamer-simpson.gif" />
-          </div>
         </li>
       </ul>
     </form>
