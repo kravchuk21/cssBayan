@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML + CSS accordion</title>
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>CSS Bayan</h1>
+
+    <form>
+      <ul class="accordion">
+        <li tabindex="1" class="accordion__item">
+          <label for="accordion__item1">
+            <input name="accordion__item" checked type="radio" id="accordion__item1" />
+            <h2 class="accordion__title">
+              lol funny mem
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </h2>
+            <div class="accordion__content">
+              <img src="images/lol-funny-memes.gif" />
+            </div>
+          </label>
+        </li>
+        <li tabindex="1" class="accordion__item">
+          <label for="accordion__item2">
+            <input name="accordion__item" type="radio" id="accordion__item2" />
+            <h2 class="accordion__title">
+              nok nok penguin nook nook
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </h2>
+            <div class="accordion__content">
+              <img src="images/nok-nok-penguin-nook-nook.gif" />
+            </div>
+          </label>
+        </li>
+        <li tabindex="1" class="accordion__item">
+          <label for="accordion__item3">
+            <input name="accordion__item" type="radio" id="accordion__item3" />
+            <h2 class="accordion__title">
+              gamer simpson <i class="fa fa-plus"></i>
+            </h2>
+            <div class="accordion__content">
+              <img src="images/gamer-simpson.gif" />
+            </div>
+          </label>
+        </li>
+      </ul>
+    </form>
+  </div>
+</body>
+
+</html>
