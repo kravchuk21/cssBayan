@@ -1,3 +1,48 @@
 body {
-  background-color: yellow;
+  background-color: lightyellow;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__title {
+  margin: 0;
+}
+
+.accordion__item {
+  border-top: 1px #ccc solid;
+  padding: 15px 0;
+}
+
+.accordion__item input {
+  display: none;
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.15s ease-out;
+}
+
+.accordion__content img {
+  display: block;
+  width: 70%;
+  margin: 15px auto;
+  max-height: 400px;
+  height: 100%;
+}
+
+.accordion__item:hover .accordion__content,
+.accordion__item input:checked ~ .accordion__content {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
 }
